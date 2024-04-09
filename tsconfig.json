@@ -1,0 +1,23 @@
+{
+  "extends": "astro/tsconfigs/base",
+    "compilerOptions": {
+      "jsx": "preserve",
+      "allowSyntheticDefaultImports":true,
+      "allowImportingTsExtensions":true,
+      "lib":["dom","esnext","DOM.Iterable"],
+      "target": "ESNext",
+      "baseUrl": ".",
+      "paths":{
+        "@components":["./src/components"],
+        "@components/*":["./src/components/*"],
+        "@db":["./src/db"],
+        "@db/*":["./src/db/*"],
+        "@pages":["./src/pages"],
+        "@pages/*":["./src/pages/*"],
+        "@lib":["./src/lib"],
+        "@lib/*":["./src/lib/*"],
+        "@layouts":["./src/layouts"],
+        "@layouts/*":["./src/layouts/*"],
+      }
+    }
+  }

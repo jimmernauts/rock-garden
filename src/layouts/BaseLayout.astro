@@ -1,0 +1,22 @@
+---
+const { title } = Astro.props;
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="mask-icon" href="/favicon.svg" color="#FFFFFF" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>{title}</title>
+    <meta name="description" content={title} />
+  </head>
+  <body class="bg-ecru-white-50 wrapper text-ecru-white-950 font-old-style text-lg">
+    <main class="grid ml-1 mr-2 gap-2 grid-cols-12 min-h-[90vh]">
+      <slot title={title} />
+    </main>
+  </body>
+</html>
