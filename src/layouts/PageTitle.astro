@@ -1,0 +1,11 @@
+---
+interface Props {
+  class?: string;
+  title?: string;
+}
+const { title, ...props } = Astro.props;
+---
+
+<div class={`${props.class} mt-4 mb-2 sm:mb-4 mx-2 flex text-7xl`}>
+    <h1 id="title" class="min-h-[56px] max-h-[140px] sm:max-h-[170px] overflow-hidden px-0 pb-1 w-full font-industrial font-bold italic text-silver-100" >{title}</textarea>
+</div>

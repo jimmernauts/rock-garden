@@ -1,3 +1,3 @@
 import BaseLayout from "./BaseLayout.astro";
-
-export { BaseLayout } ;
+import PageTitle from "./PageTitle.astro"
+export { BaseLayout, PageTitle } ;

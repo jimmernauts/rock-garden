@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@types/bun": "^1.0.12",
-    "biome": "^0.3.3"
+    "biome": "^0.3.3",
+    "fluid-tailwind": "^0.1.6",
+    "uico": "^0.2.4"
   }
 }
